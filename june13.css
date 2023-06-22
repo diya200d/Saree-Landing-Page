@@ -1,0 +1,82 @@
+:root{
+---blue:#1e90ff;
+---white:#ffff;
+---red:#ff0000;
+---margin:20px;
+}
+/* user defined varibales */
+div{
+    background-color: var(---blue);
+
+    /* color: var(---white); */
+    color: var(---red);
+    margin: var(---margin);
+} 
+/* beowser tools- we are acccessing */
+::-webkit-scrollbar{
+width: 100px;
+}
+::-webkit-scrollbar-track{
+    background-color:yellow;
+}
+::-webkit-scrollbar-thumb{
+    background-color: blueviolet;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color:crimson;
+   
+}
+ /* ::-webkit-scrollbar-button{
+    background-color: aqua;
+    margin: var(---margin); 
+} */
+
+/* SUDO SELECTORS */
+P::before{
+     content: "Read this";
+     background-color: aqua;
+     font-size: 30px;
+    
+}
+P:after{
+    content: "Read after";
+    background-color: chartreuse;
+    font-size: 30px;
+    /* padding: 10px; */
+}
+h1:first-line{
+    color: red;
+}
+h1:first-letter{
+    color: fuchsia;
+}
+
+/* RESPONSIVE */
+body{
+    background-color: BROWN;
+}
+/* for mobile */
+@media screen and (min-width:480px) and (max-width:700px) {
+    body{
+        background-color: grey;
+
+    }
+    
+}
+@media screen and (max-width:480px) and (min-width:0px) {
+    body{
+        background-color:lightblue
+    }
+    p{
+        color:lime;
+       
+        
+    }
+    
+}
+p{
+    letter-spacing: 10px;
+}
+/* div,form,h1,p (we can target multiple tags in place of body) */
+
+    
